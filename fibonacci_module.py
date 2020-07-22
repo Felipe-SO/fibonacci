@@ -1,5 +1,5 @@
 #returns selected term of the fibonacci sequence starting in 1, 1
-def fiboeff(term):
+def fibonum(term):
 	count=0
 	x=1
 	y=0
@@ -27,18 +27,18 @@ def fiboseq(limit):
 
 #counts the digits of a certain term of the fibonacci sequence
 def fibodigits(term):
-    return(len(str(fiboeff(term))))
+    return(len(str(fibonum(term))))
 
 #prints index of fibonacci value lesser than x
 def fibolim(x):
     y=1
-    while fiboeff(y) < x:
+    while fibonum(y) < x:
         y+=1
     print(y-1)
     return y-1
 
 #prints prints the index and value of the last fibonacci number lesser than limit
 def fiboless(limit):
-    print(fiboeff(fibolim(limit)))
+    print(fibonum(fibolim(limit)))
     
 
